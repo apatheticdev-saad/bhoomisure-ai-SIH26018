@@ -1,0 +1,69 @@
+# ==============================
+# BhoomiSure AI - Git Ignore
+# ==============================
+
+# ---------- Python ----------
+backend/.venv/
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ---------- Environment / Secrets ----------
+.env
+.env.*
+!.env.example
+
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# ---------- Node / Next.js ----------
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ---------- Runtime / Generated Data ----------
+storage/
+backend/uploads/
+backend/storage/
+backend/data/
+uploads/
+tmp/
+temp/
+
+# ---------- Database Runtime Files ----------
+*.sqlite
+*.sqlite3
+*.db
+
+# ---------- Logs ----------
+*.log
+
+# ---------- Python tooling ----------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------- OS / Editor ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---------- Build output ----------
+dist/
+build/
