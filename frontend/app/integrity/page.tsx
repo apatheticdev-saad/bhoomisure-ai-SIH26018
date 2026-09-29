@@ -22,7 +22,7 @@ import {
 
 const API =
   process.env.NEXT_PUBLIC_API_URL ||
-  "http://127.0.0.1:8000";
+  process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
 
 type IntegrityBlock = {
   id: number;
@@ -1075,7 +1075,7 @@ function formatDate(value: string) {
 //   CheckCircle2,
 // } from "lucide-react";
 
-// const API = "http://127.0.0.1:8000";
+// const API = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
 
 // export default function IntegrityPage() {
 //   const [data, setData] = useState<any>(null);
