@@ -1,5 +1,6 @@
 from pathlib import Path
 import re
+import os
 
 import cv2
 import numpy as np
@@ -10,7 +11,8 @@ import pytesseract
 # TESSERACT CONFIGURATION
 # =========================================================
 
-pytesseract.pytesseract.tesseract_cmd = (
+pytesseract.pytesseract.tesseract_cmd = os.getenv(
+    "TESSERACT_CMD",
     r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 )
 
