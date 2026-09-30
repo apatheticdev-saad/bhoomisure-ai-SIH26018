@@ -671,28 +671,29 @@ export default function IntegrityPage() {
           {/* BLOCKS */}
 
           {!loading &&
-            data?.blocks?.length > 0 && (
+  data?.blocks &&
+  data.blocks.length > 0 && (
 
-              <div className="divide-y divide-slate-100">
+    <div className="divide-y divide-slate-100">
 
-                {data.blocks.map(
-                  (block, index) => (
+      {data.blocks.map(
+        (block, index) => (
 
-                    <IntegrityBlockCard
-                      key={block.id}
-                      block={block}
-                      isLast={
-                        index ===
-                        data.blocks.length - 1
-                      }
-                    />
+          <IntegrityBlockCard
+            key={block.id}
+            block={block}
+            isLast={
+              index ===
+              data.blocks!.length - 1
+            }
+          />
 
-                  )
-                )}
+        )
+      )}
 
-              </div>
+    </div>
 
-            )}
+  )}
 
         </section>
 
