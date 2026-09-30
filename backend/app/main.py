@@ -30,6 +30,8 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",
         "http://127.0.0.1:3000",
+        "https://bhoomisure-ai-sih-26018.vercel.app",
+        "https://bhoomisure-ai-sih-26018-azns50m05-stack-pulse1.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
