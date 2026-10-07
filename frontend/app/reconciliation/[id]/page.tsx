@@ -13,6 +13,7 @@ type Comparison = {
   existing_record_id: number;
 };
 
+
 type ReconciliationResult = {
   status: "matched" | "conflict" | "no_match";
   matching_record_count: number;
@@ -27,6 +28,7 @@ type ApiResponse = {
   validation_status: string;
   reconciliation: ReconciliationResult;
 };
+
 
 const API_URL =
   process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
@@ -54,6 +56,7 @@ export default function ReconciliationPage() {
   const [selectedRecordId, setSelectedRecordId] = useState<number | null>(
     null
   );
+
 
   useEffect(() => {
     if (!recordId || Number.isNaN(recordId)) {
@@ -530,3 +533,5 @@ function SummaryCard({
     </div>
   );
 }
+
+// End.....

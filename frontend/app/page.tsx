@@ -1270,7 +1270,7 @@ function StatusBadge({
   );
 }
 
-
+// QUICK SERVICE Added here
 /* ========================================================= */
 /* QUICK SERVICE */
 /* ========================================================= */
@@ -1302,7 +1302,7 @@ function GovernmentAction({
           size={16}
           className="text-slate-300 transition group-hover:text-[#1769aa]"
         />
-
+ 
       </div>
 
       <h4 className="mt-4 text-sm font-bold text-[#263746]">
